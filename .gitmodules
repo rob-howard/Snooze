@@ -1,0 +1,3 @@
+[submodule "sonos-objc"]
+	path = sonos-objc-fork
+	url = git@github.com:rob-howard/sonos-objc-fork.git

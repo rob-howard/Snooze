@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		100C6E1E1C0F74C100385D2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100C6E1D1C0F74C100385D2E /* AppDelegate.swift */; };
+		100C6E231C0F74C100385D2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 100C6E211C0F74C100385D2E /* Main.storyboard */; };
+		100C6E251C0F74C100385D2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 100C6E241C0F74C100385D2E /* Assets.xcassets */; };
+		100C6E281C0F74C100385D2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 100C6E261C0F74C100385D2E /* LaunchScreen.storyboard */; };
+		100C6E301C0F757C00385D2E /* SonosControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100C6E2F1C0F757C00385D2E /* SonosControllerViewController.swift */; };
+		101729EB1C0FBDE6004D4380 /* ControllerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101729EA1C0FBDE6004D4380 /* ControllerDetailsViewController.swift */; };
+		1050F7551C1CD37A004A1BFE /* SonosFavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1050F7541C1CD37A004A1BFE /* SonosFavoritesViewController.swift */; };
+		10DE7B741C10EA3C00D66FD2 /* MicrosoftBandKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10DE7B731C10EA3C00D66FD2 /* MicrosoftBandKit_iOS.framework */; };
+		10DE7B761C10EE2B00D66FD2 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DE7B751C10EE2B00D66FD2 /* MainScreenViewController.swift */; };
+		10DE7B7A1C139B1900D66FD2 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10DE7B791C139B1900D66FD2 /* CoreBluetooth.framework */; };
+		10DE7B7D1C13A30D00D66FD2 /* A.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DE7B7B1C13A30D00D66FD2 /* A.png */; };
+		10DE7B7E1C13A30D00D66FD2 /* Aa.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DE7B7C1C13A30D00D66FD2 /* Aa.png */; };
+		10DE7B881C168C6400D66FD2 /* SnoozeBandController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DE7B871C168C6400D66FD2 /* SnoozeBandController.swift */; };
+		562A621AD1A4FDBEC9FD8B86 /* libPods-Snooze.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A8653EAA06CAC5D5CD0C82E8 /* libPods-Snooze.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0251A67693350529C117FB50 /* Pods-Snooze.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snooze.release.xcconfig"; path = "Pods/Target Support Files/Pods-Snooze/Pods-Snooze.release.xcconfig"; sourceTree = "<group>"; };
+		100C6E1A1C0F74C100385D2E /* Snooze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snooze.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		100C6E1D1C0F74C100385D2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		100C6E221C0F74C100385D2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		100C6E241C0F74C100385D2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		100C6E271C0F74C100385D2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		100C6E291C0F74C100385D2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		100C6E2F1C0F757C00385D2E /* SonosControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SonosControllerViewController.swift; sourceTree = "<group>"; };
+		100C6E311C0F76E100385D2E /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		101729EA1C0FBDE6004D4380 /* ControllerDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerDetailsViewController.swift; sourceTree = "<group>"; };
+		1050F7541C1CD37A004A1BFE /* SonosFavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SonosFavoritesViewController.swift; sourceTree = "<group>"; };
+		10DE7B731C10EA3C00D66FD2 /* MicrosoftBandKit_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MicrosoftBandKit_iOS.framework; sourceTree = "<group>"; };
+		10DE7B751C10EE2B00D66FD2 /* MainScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		10DE7B791C139B1900D66FD2 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		10DE7B7B1C13A30D00D66FD2 /* A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = A.png; sourceTree = "<group>"; };
+		10DE7B7C1C13A30D00D66FD2 /* Aa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Aa.png; sourceTree = "<group>"; };
+		10DE7B871C168C6400D66FD2 /* SnoozeBandController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnoozeBandController.swift; sourceTree = "<group>"; };
+		A8653EAA06CAC5D5CD0C82E8 /* libPods-Snooze.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Snooze.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC4673788652DAD59C1786EE /* Pods-Snooze.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snooze.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Snooze/Pods-Snooze.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		100C6E171C0F74C100385D2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10DE7B7A1C139B1900D66FD2 /* CoreBluetooth.framework in Frameworks */,
+				562A621AD1A4FDBEC9FD8B86 /* libPods-Snooze.a in Frameworks */,
+				10DE7B741C10EA3C00D66FD2 /* MicrosoftBandKit_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		100C6E111C0F74C100385D2E = {
+			isa = PBXGroup;
+			children = (
+				100C6E1C1C0F74C100385D2E /* Snooze */,
+				100C6E1B1C0F74C100385D2E /* Products */,
+				B51D48F61CB089BBB078F99A /* Pods */,
+				F228838CD781019475842528 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		100C6E1B1C0F74C100385D2E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				100C6E1A1C0F74C100385D2E /* Snooze.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		100C6E1C1C0F74C100385D2E /* Snooze */ = {
+			isa = PBXGroup;
+			children = (
+				10DE7B781C10EE5C00D66FD2 /* Resources */,
+				10DE7B771C10EE4900D66FD2 /* ViewControllers */,
+				100C6E1D1C0F74C100385D2E /* AppDelegate.swift */,
+				10DE7B871C168C6400D66FD2 /* SnoozeBandController.swift */,
+			);
+			path = Snooze;
+			sourceTree = "<group>";
+		};
+		10DE7B771C10EE4900D66FD2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				100C6E2F1C0F757C00385D2E /* SonosControllerViewController.swift */,
+				101729EA1C0FBDE6004D4380 /* ControllerDetailsViewController.swift */,
+				10DE7B751C10EE2B00D66FD2 /* MainScreenViewController.swift */,
+				1050F7541C1CD37A004A1BFE /* SonosFavoritesViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		10DE7B781C10EE5C00D66FD2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				10DE7B7B1C13A30D00D66FD2 /* A.png */,
+				10DE7B7C1C13A30D00D66FD2 /* Aa.png */,
+				100C6E211C0F74C100385D2E /* Main.storyboard */,
+				100C6E241C0F74C100385D2E /* Assets.xcassets */,
+				100C6E261C0F74C100385D2E /* LaunchScreen.storyboard */,
+				100C6E291C0F74C100385D2E /* Info.plist */,
+				100C6E311C0F76E100385D2E /* Bridging-Header.h */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B51D48F61CB089BBB078F99A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC4673788652DAD59C1786EE /* Pods-Snooze.debug.xcconfig */,
+				0251A67693350529C117FB50 /* Pods-Snooze.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F228838CD781019475842528 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10DE7B791C139B1900D66FD2 /* CoreBluetooth.framework */,
+				10DE7B731C10EA3C00D66FD2 /* MicrosoftBandKit_iOS.framework */,
+				A8653EAA06CAC5D5CD0C82E8 /* libPods-Snooze.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		100C6E191C0F74C100385D2E /* Snooze */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 100C6E2C1C0F74C100385D2E /* Build configuration list for PBXNativeTarget "Snooze" */;
+			buildPhases = (
+				E73D255678FDC1EED68B08CF /* Check Pods Manifest.lock */,
+				100C6E161C0F74C100385D2E /* Sources */,
+				100C6E171C0F74C100385D2E /* Frameworks */,
+				100C6E181C0F74C100385D2E /* Resources */,
+				7753D4C79B10AE1170ADF9C7 /* Embed Pods Frameworks */,
+				E207708ECCDFD543E993298E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Snooze;
+			productName = Snooze;
+			productReference = 100C6E1A1C0F74C100385D2E /* Snooze.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		100C6E121C0F74C100385D2E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Manimal;
+				TargetAttributes = {
+					100C6E191C0F74C100385D2E = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = 100C6E151C0F74C100385D2E /* Build configuration list for PBXProject "Snooze" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 100C6E111C0F74C100385D2E;
+			productRefGroup = 100C6E1B1C0F74C100385D2E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				100C6E191C0F74C100385D2E /* Snooze */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		100C6E181C0F74C100385D2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10DE7B7E1C13A30D00D66FD2 /* Aa.png in Resources */,
+				100C6E281C0F74C100385D2E /* LaunchScreen.storyboard in Resources */,
+				10DE7B7D1C13A30D00D66FD2 /* A.png in Resources */,
+				100C6E251C0F74C100385D2E /* Assets.xcassets in Resources */,
+				100C6E231C0F74C100385D2E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7753D4C79B10AE1170ADF9C7 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Snooze/Pods-Snooze-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E207708ECCDFD543E993298E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Snooze/Pods-Snooze-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E73D255678FDC1EED68B08CF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		100C6E161C0F74C100385D2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100C6E1E1C0F74C100385D2E /* AppDelegate.swift in Sources */,
+				1050F7551C1CD37A004A1BFE /* SonosFavoritesViewController.swift in Sources */,
+				10DE7B761C10EE2B00D66FD2 /* MainScreenViewController.swift in Sources */,
+				101729EB1C0FBDE6004D4380 /* ControllerDetailsViewController.swift in Sources */,
+				10DE7B881C168C6400D66FD2 /* SnoozeBandController.swift in Sources */,
+				100C6E301C0F757C00385D2E /* SonosControllerViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		100C6E211C0F74C100385D2E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				100C6E221C0F74C100385D2E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		100C6E261C0F74C100385D2E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				100C6E271C0F74C100385D2E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		100C6E2A1C0F74C100385D2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Snooze/Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		100C6E2B1C0F74C100385D2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Snooze/Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		100C6E2D1C0F74C100385D2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC4673788652DAD59C1786EE /* Pods-Snooze.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Snooze/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.robhoward.Snooze;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9884bd1f-bb1e-4894-bcad-eb20e5c80ffc";
+			};
+			name = Debug;
+		};
+		100C6E2E1C0F74C100385D2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0251A67693350529C117FB50 /* Pods-Snooze.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Snooze/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.robhoward.Snooze;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9884bd1f-bb1e-4894-bcad-eb20e5c80ffc";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		100C6E151C0F74C100385D2E /* Build configuration list for PBXProject "Snooze" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				100C6E2A1C0F74C100385D2E /* Debug */,
+				100C6E2B1C0F74C100385D2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		100C6E2C1C0F74C100385D2E /* Build configuration list for PBXNativeTarget "Snooze" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				100C6E2D1C0F74C100385D2E /* Debug */,
+				100C6E2E1C0F74C100385D2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 100C6E121C0F74C100385D2E /* Project object */;
+}
