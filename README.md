@@ -7,6 +7,13 @@ Personal goals of this project:
 - Get familiar with the Microsoft Band SDK, do something non-trivial - https://developer.microsoftband.com/
 - Integrate with Sonos, since there isn't a public SDK, try to figure out how. Forked someones objc project: https://github.com/rob-howard/sonos-objc-fork 
 
+
+Installation / Setup:
+- git clone https://github.com/rob-howard/Snooze.git
+- git submodule init
+- git submodule update
+- pod install
+
 Initial feature (Sleep timer):
 - app will create a new Tile on a Microsoft Band
 - select a sonos controller for use with the app
