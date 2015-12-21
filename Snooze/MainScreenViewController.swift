@@ -8,16 +8,16 @@
 
 import UIKit
 
-public class MainScreenViewController: UIViewController, SnoozeBandControllerDelegate {
+public class MainScreenViewController: UIViewController {
 
-    
-    private var snoozeBandController: SnoozeBandController?
-    
     @IBOutlet
     private var statusLabel:UILabel?
     
     @IBOutlet
     private var controllerButton:UIButton?
+    
+    @IBOutlet
+    private var musicButton:UIButton?
     
     @IBAction
     func controllerButtonPressed(sender: UIButton!){
@@ -31,13 +31,13 @@ public class MainScreenViewController: UIViewController, SnoozeBandControllerDel
         
         let app = UIApplication.sharedApplication().delegate as! AppDelegate
         
-        if let controller = app.selectedSnoozeController {
-            let vc = self.storyboard!.instantiateViewControllerWithIdentifier("SonosFavoritesViewController") as! SonosFavoritesViewController
-            
-            vc.controller = controller
-            
-            navigationController!.pushViewController(vc, animated: true)
-        }
+        guard let controller = app.selectedSnoozeController else { return; }
+        
+        let vc = self.storyboard!.instantiateViewControllerWithIdentifier("SonosFavoritesViewController") as! SonosFavoritesViewController
+        
+        vc.controller = controller
+        
+        navigationController!.pushViewController(vc, animated: true)
     }
     
     @IBAction
@@ -45,26 +45,21 @@ public class MainScreenViewController: UIViewController, SnoozeBandControllerDel
     
         let app = UIApplication.sharedApplication().delegate as! AppDelegate
         
-        if let controller = app.selectedSnoozeController {
-            if let playable = app.selectedFavorite {
+        guard let controller = app.selectedSnoozeController else { return; }
+        guard let playable = app.selectedFavorite else { return; }
             
-                controller.playPlayable(playable, completion: {
-                    (error)->() in
-                if(error != nil){
-                    print(error)
-                    }                
-                })
-            }
-        }       
+        controller.playPlayable(playable, completion: {
+            (error)->() in
+        if(error != nil){
+            print(error)
+            }                
+        })
     }
     
     override public func viewDidLoad() {
         super.viewDidLoad()
         
-        self.setStatusText("Initializing...")
-        
-        snoozeBandController = SnoozeBandController()
-        snoozeBandController?.snoozebandControllerDelegate = self
+        self.setStatusText("Initializing...")        
     }
     
     override public func viewDidAppear(animated: Bool) {
@@ -78,71 +73,18 @@ public class MainScreenViewController: UIViewController, SnoozeBandControllerDel
         else{
             controllerButton?.setTitle("None", forState: UIControlState.Normal)
         }
+        
+        if let music = app.selectedFavorite {
+            musicButton?.setTitle(music.title, forState: UIControlState.Normal)
+        }
+        else{
+            musicButton?.setTitle("None", forState: UIControlState.Normal)
+        }
     }
         
-    private func setStatusText(text:String){
+    public func setStatusText(text:String){
         dispatch_async(dispatch_get_main_queue()) {
             self.statusLabel?.text = text
-        }
-    }
-    
-    public func statusUpdate(controller:SnoozeBandController, status:String){
-        setStatusText(status)
-    }
-    
-    public func bandTileOpened(controller:SnoozeBandController, handled:(Bool)->()){
-        let app = UIApplication.sharedApplication().delegate as! AppDelegate
-        
-        if (app.selectedSnoozeController == nil){
-            controller.setTilePage("Please pick a controller to use in the app", buttonText: nil)
-            handled(false)
-        }
-        else if(app.selectedFavorite == nil){
-            controller.setTilePage("Please pick music to play in the app", buttonText:nil)
-            handled(false)
-        }
-        else{
-            controller.setTilePage("Ready to sleep?", buttonText: "Go!")
-            handled(true);
-        }
-    }
-    
-    public func bandTileClosed(controller:SnoozeBandController, handled:(Bool)->()){
-        controller.setTilePage("Initializing...", buttonText: nil)
-        handled(true);
-    }
-    
-    public func bandButtonPressed(controller:SnoozeBandController, handled:(Bool)->()){
-        
-        let app = UIApplication.sharedApplication().delegate as! AppDelegate
-        
-        if let snoozeController = app.selectedSnoozeController, let music = app.selectedFavorite {
-            snoozeController.playPlayable(music, completion: {
-                (error)->() in
-                if(error != nil){
-                    handled(false)
-                    controller.setTilePage("Error in setting music to play.", buttonText:nil)
-                    return
-                }
-                else{
-                    snoozeController.setSleepTimer(60*30, completion:{
-                        (response: [NSObject : AnyObject]!, error:NSError!) -> Void in
-                        
-                        handled(true)
-                        controller.setTilePage("Goodnight!", buttonText:nil)
-                        return
-                    })
-                }
-            })
-        }
-        else{
-            handled(false)
-            if(app.selectedFavorite == nil){
-                controller.setTilePage("Please pick music to play in the app", buttonText:nil)
-            } else if (app.selectedSnoozeController == nil){
-                controller.setTilePage("Please pick a controller to use in the app", buttonText: nil)
-            }
-            return
         }
     }
 }
